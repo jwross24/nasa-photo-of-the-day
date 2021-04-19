@@ -1,5 +1,13 @@
+body {
+  width: 100%;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
 }
 
 .App-logo {
@@ -35,4 +43,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+div {
+  text-align: center;
+}
+
+button {
+  max-width: 100px;
+}
+
+img {
+  max-width: 90%;
 }
