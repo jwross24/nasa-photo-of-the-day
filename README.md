@@ -157,7 +157,7 @@ has been made.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge Branch into `main` (student's Repository).
+- [x] Submit a Pull-Request to merge Branch into `main` (student's Repository).
 
 ---
 
