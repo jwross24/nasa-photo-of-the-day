@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
+import { InfoContainer, MediaSummary } from '../Styles';
 
 const NASAPhoto = (props) => {
   const { photoData } = props;
 
   return (
-    <>
+    <InfoContainer>
       <h1>Astronomy Picture of the Day</h1>
       <p>
         Discover the cosmos! Each day a different image or photograph of our
@@ -28,15 +29,15 @@ const NASAPhoto = (props) => {
             )}
           </div>
           <h2>{photoData.title}</h2>
-          <p className="explanation">
+          <MediaSummary>
             {photoData.explanation.replace(
               ' Explore Your Universe: Random APOD Generator',
               '',
             )}
-          </p>
+          </MediaSummary>
         </>
       )}
-    </>
+    </InfoContainer>
   );
 };
 

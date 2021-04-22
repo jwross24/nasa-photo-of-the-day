@@ -3,6 +3,7 @@ import axios from 'axios';
 import DatePicker from 'react-date-picker';
 import './App.css';
 import NASAPhoto from './components/NASAPhoto';
+import { AppContainer } from './Styles';
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 const API_URL = `https://api.nasa.gov/planetary/apod?api_key=${API_KEY}`;
@@ -42,13 +43,13 @@ function App() {
   }, [calendarDate, isLoading]);
 
   return (
-    <div className="App">
+    <AppContainer>
       <NASAPhoto photoData={photoData} />
       <div>
         <span>Choose a date: </span>{' '}
         <DatePicker onChange={setDate} value={calendarDate} />
       </div>
-    </div>
+    </AppContainer>
   );
 }
 
